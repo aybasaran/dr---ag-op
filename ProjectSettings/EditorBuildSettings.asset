@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 7aec5fba1164b0f4d8fc8a467f8559ac
-  - enabled: 1
     path: Assets/Scenes/Animals.unity
     guid: c48fcacc6e5613a4e8836d036f8b757c
   - enabled: 1
@@ -17,4 +14,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Puzzles/animals/animals_1.unity
     guid: 7fb2602cee7f1034e93071b8faa631ce
+  - enabled: 1
+    path: Assets/Scenes/Puzzles/animals/animals_2.unity
+    guid: 678b8b55b5e29c74c8e09e50b38e799b
+  - enabled: 1
+    path: Assets/Scenes/Puzzles/animals/animals_3.unity
+    guid: c5250a2001ab3a142a3db706ec18bb71
+  - enabled: 1
+    path: Assets/Scenes/Puzzles/animals/animals_4.unity
+    guid: 6ef61c06e512a7e47b6a3f09aa3344b2
+  - enabled: 1
+    path: Assets/Scenes/Puzzles/animals/animals_5.unity
+    guid: 644bb97eef20cfc42af52d407d196c99
+  - enabled: 1
+    path: Assets/Scenes/Puzzles/animals/animals_6.unity
+    guid: adfb4a0630ce8694890b4c37fceadbb0
+  - enabled: 1
+    path: Assets/Scenes/Puzzles/animals/animals_7.unity
+    guid: 36dd3f05e6504a240897e47e2771b824
   m_configObjects: {}

@@ -21,11 +21,11 @@ public class IsComplete : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip clip;
     public float volume = 0.5f;
-
     private void Awake()
     {
         puzzleNameText.SetActive(false);
         puzzle.GetComponent<SpriteRenderer>().enabled = false;
+
     }
 
     private void Update()

@@ -16,6 +16,6 @@ public class SetPuzzleIndex : MonoBehaviour
     }
     void TaskOnClick()
     {
-        SceneManager.LoadScene(PlayerPrefs.GetString("selectedPuzzleCategory") + "_" + this.gameObject.name);
+        SceneManager.LoadScene("animals" + "_" + this.gameObject.name);
     }
 }

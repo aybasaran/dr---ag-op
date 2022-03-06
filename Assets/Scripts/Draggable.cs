@@ -15,15 +15,23 @@ public class Draggable : MonoBehaviour
     private bool locked = false;
     private Vector3 initialmousePosition;
     private Vector3 initialPosition;
+    private int heldPuzzleIndex;
 
     public AudioSource audioSource;
     public AudioClip clip;
     public float volume = 0.5f;
 
-    private void Start()
+    public GameObject confetti;
+    private ParticleSystem confettiParticles;
+    public GameObject confettiPosition;
+    private void Awake()
     {
         sprite = GetComponent<SpriteRenderer>();
-
+        confettiParticles = confetti.GetComponent<ParticleSystem>();
+        confettiParticles.Stop();
+    }
+    private void Start()
+    {
         if (sprite)
         {
             sprite.sortingOrder = sortingOrder;
@@ -43,7 +51,6 @@ public class Draggable : MonoBehaviour
 
     private void OnMouseDrag()
     {
-
         // Fare ile surukleme halindeyken sorting leyerini diger puzzlelarin ustunde olacak sekilde ayarla
         // this.setSortingLayer("MovingPuzzle")
         sprite.sortingLayerName = MOVING_LAYER_NAME;
@@ -57,8 +64,11 @@ public class Draggable : MonoBehaviour
     {
         if (Mathf.Abs(transform.position.x - placer.transform.position.x) <= 0.7f && Mathf.Abs(transform.position.y - placer.transform.position.y) <= 0.7f)
         {
-            if(!locked){
+            if (!locked)
+            {
                 audioSource.PlayOneShot(clip, volume);
+                confetti.transform.position = confettiPosition.transform.position;
+                confettiParticles.Play();
             }
             transform.position = placer.transform.position;
             locked = true;
