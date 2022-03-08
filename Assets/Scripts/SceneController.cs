@@ -10,6 +10,17 @@ using UnityEditor;
 
 public class SceneController : MonoBehaviour
 {
+    private int limitMin = 1;
+    private int liminMax = 7;
+    private Scene currentlyActiveScene;
+
+    private int puzzleIndex;
+
+    private void Start()
+    {
+        currentlyActiveScene = SceneManager.GetActiveScene();
+        puzzleIndex = int.Parse(currentlyActiveScene.name[currentlyActiveScene.name.Length - 1].ToString());
+    }
 
     public void goSettings()
     {
@@ -24,5 +35,20 @@ public class SceneController : MonoBehaviour
     {
         PlayerPrefs.SetString("selectedPuzzleCategory", "animals");
         SceneManager.LoadScene("Animals");
+    }
+
+    public void NextPuzzle()
+    {
+        if (puzzleIndex < liminMax)
+        {
+            SceneManager.LoadScene("animals_" + (puzzleIndex + 1));
+        }
+    }
+    public void PrevPuzzle()
+    {
+        if (puzzleIndex > limitMin)
+        {
+            SceneManager.LoadScene("animals_" + (puzzleIndex - 1));
+        }
     }
 }
