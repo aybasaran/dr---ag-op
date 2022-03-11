@@ -18,8 +18,6 @@ public class SceneController : MonoBehaviour
 
     private void Start()
     {
-        currentlyActiveScene = SceneManager.GetActiveScene();
-        puzzleIndex = int.Parse(currentlyActiveScene.name[currentlyActiveScene.name.Length - 1].ToString());
     }
 
     public void goSettings()
@@ -39,6 +37,8 @@ public class SceneController : MonoBehaviour
 
     public void NextPuzzle()
     {
+        currentlyActiveScene = SceneManager.GetActiveScene();
+        puzzleIndex = int.Parse(currentlyActiveScene.name[currentlyActiveScene.name.Length - 1].ToString());
         if (puzzleIndex < liminMax)
         {
             SceneManager.LoadScene("animals_" + (puzzleIndex + 1));
@@ -46,6 +46,8 @@ public class SceneController : MonoBehaviour
     }
     public void PrevPuzzle()
     {
+        currentlyActiveScene = SceneManager.GetActiveScene();
+        puzzleIndex = int.Parse(currentlyActiveScene.name[currentlyActiveScene.name.Length - 1].ToString());
         if (puzzleIndex > limitMin)
         {
             SceneManager.LoadScene("animals_" + (puzzleIndex - 1));
