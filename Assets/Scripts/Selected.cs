@@ -12,7 +12,7 @@ public class Selected : MonoBehaviour
         btn = GetComponent<Button>();
         btn.onClick.AddListener(changeDifficultyLevel);
         tick.SetActive(false);
-        // Debug.Log(gameObject.name);
+
         if (PlayerPrefs.GetString("diffLevel") == gameObject.name)
         {
             tick.SetActive(true);
@@ -33,7 +33,6 @@ public class Selected : MonoBehaviour
 
     private void changeDifficultyLevel()
     {
-        Debug.LogFormat("Zorluk seviyesi degisti! {0}", gameObject.name);
         PlayerPrefs.SetString("diffLevel", gameObject.name);
     }
 
