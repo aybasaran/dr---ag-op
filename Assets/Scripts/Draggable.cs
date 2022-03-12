@@ -21,6 +21,8 @@ public class Draggable : MonoBehaviour
     public AudioClip clip;
     public float volume = 0.5f;
 
+    private float difficultyMultiplier;
+
     public GameObject confetti;
     private ParticleSystem confettiParticles;
     public GameObject confettiPosition;
@@ -29,6 +31,20 @@ public class Draggable : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         confettiParticles = confetti.GetComponent<ParticleSystem>();
         confettiParticles.Stop();
+
+        switch (PlayerPrefs.GetString("diffLevel"))
+        {
+            case "easy":
+                difficultyMultiplier = 1.1f;
+                break;
+            case "hard":
+                difficultyMultiplier = 0.4f;
+                break;
+
+            default:
+                difficultyMultiplier = 0.75f;
+                break;
+        }
     }
     private void Start()
     {
@@ -62,7 +78,7 @@ public class Draggable : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (Mathf.Abs(transform.position.x - placer.transform.position.x) <= 0.7f && Mathf.Abs(transform.position.y - placer.transform.position.y) <= 0.7f)
+        if (Mathf.Abs(transform.position.x - placer.transform.position.x) <= difficultyMultiplier && Mathf.Abs(transform.position.y - placer.transform.position.y) <= difficultyMultiplier)
         {
             if (!locked)
             {
