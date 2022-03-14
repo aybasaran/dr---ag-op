@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Puzzles/animals/animals_7.unity
     guid: 36dd3f05e6504a240897e47e2771b824
+  - enabled: 1
+    path: Assets/Scenes/Puzzles/animals/animals_8.unity
+    guid: 4faec758ff7afe84781151079d7ebdcd
   m_configObjects: {}

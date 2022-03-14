@@ -14,6 +14,7 @@ public class TextConversion : MonoBehaviour
 
     private void Awake()
     {
+        convertedText = GetComponent<Text>();
         setLanguage();
     }
     private void Update()
@@ -22,7 +23,7 @@ public class TextConversion : MonoBehaviour
     }
     public void setLanguage()
     {
-        convertedText = GetComponent<Text>();
+
         switch (PlayerPrefs.GetString("CurrentLang"))
         {
             case "ENG":
