@@ -11,7 +11,7 @@ using UnityEditor;
 public class SceneController : MonoBehaviour
 {
     private int limitMin = 1;
-    private int liminMax = 7;
+    private int liminMax = 17;
     private Scene currentlyActiveScene;
 
     private int puzzleIndex;
@@ -38,19 +38,20 @@ public class SceneController : MonoBehaviour
     public void NextPuzzle()
     {
         currentlyActiveScene = SceneManager.GetActiveScene();
-        puzzleIndex = int.Parse(currentlyActiveScene.name[currentlyActiveScene.name.Length - 1].ToString());
+        puzzleIndex = int.Parse(currentlyActiveScene.name.Split('_')[1]);
         if (puzzleIndex < liminMax)
         {
-            SceneManager.LoadScene("animals_" + (puzzleIndex + 1));
+            SceneManager.LoadScene("animals_" + string.Format("{0}", puzzleIndex + 1));
+
         }
     }
     public void PrevPuzzle()
     {
         currentlyActiveScene = SceneManager.GetActiveScene();
-        puzzleIndex = int.Parse(currentlyActiveScene.name[currentlyActiveScene.name.Length - 1].ToString());
+        puzzleIndex = int.Parse(currentlyActiveScene.name.Split('_')[1]);
         if (puzzleIndex > limitMin)
         {
-            SceneManager.LoadScene("animals_" + (puzzleIndex - 1));
+            SceneManager.LoadScene("animals_" + string.Format("{0}", puzzleIndex - 1));
         }
     }
 }
