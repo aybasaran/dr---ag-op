@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 4
-  m_AspectRatio: 1.37
+  m_AspectRatio: 1.77
 --- !u!114 &236969444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fb1058f4b5ac66442b316c4d6e1559b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 861abb94c5be37949b7ff995cbc4da20, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -979,7 +979,7 @@ MonoBehaviour:
   - {fileID: 985686021}
   - {fileID: 1186444185}
   - {fileID: 1115698046}
-  puzzleNameText: {fileID: 1459845560}
+  puzzleName: {fileID: 1459845560}
   audioSource: {fileID: 900562927}
   clip: {fileID: 8300000, guid: cc5dceec912a7c648b846893d2c538e1, type: 3}
   volume: 0.5

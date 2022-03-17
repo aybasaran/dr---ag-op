@@ -9,23 +9,40 @@ using UnityEngine.SceneManagement;
 
 public class IsComplete : MonoBehaviour
 {
+    public AudioClip SpanishSpeech;
+    public AudioClip EnglishSpeech;
+    public AudioClip TurkishSpeech;
+
+    public IDictionary<string, AudioClip> speechSounds;
+
+
     [SerializeField]
     public GameObject puzzle;
     public GameObject[] pieces;
     // public Vector3[] positions;
 
-    public GameObject puzzleNameText;
+    public GameObject puzzleName;
+    private string puzzleTxt;
+
     private int counter = 0;
     private bool isComplete = false;
 
     public AudioSource audioSource;
     public AudioClip clip;
     public float volume = 0.5f;
+
     private void Awake()
     {
-        puzzleNameText.SetActive(false);
-        puzzle.GetComponent<SpriteRenderer>().enabled = false;
+        speechSounds = new Dictionary<string, AudioClip>(){
+            {"tr-TR", TurkishSpeech},
+            {"en-EN", EnglishSpeech},
+            {"es-ES", SpanishSpeech}
+        };
 
+
+        puzzleTxt = puzzleName.GetComponent<Text>().text;
+        puzzleName.SetActive(false);
+        puzzle.GetComponent<SpriteRenderer>().enabled = false;
     }
 
     private void Update()
@@ -34,15 +51,11 @@ public class IsComplete : MonoBehaviour
         {
             if (CheckPositions(this.pieces))
             {
-                Debug.Log("Completed!");
-                // Hayvanin adini goster && Sesini dinlet
-                puzzleNameText.SetActive(true);
-                audioSource.PlayOneShot(clip, volume);
+                puzzleName.SetActive(true);
                 puzzle.GetComponent<SpriteRenderer>().enabled = true;
-            }
-            else
-            {
-                // Debug.Log("Not Completed!");
+                PlayAnimalSound();
+
+                Invoke("PlaySpeechSound", 1.5f);
             }
         }
     }
@@ -61,5 +74,14 @@ public class IsComplete : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    private void PlayAnimalSound()
+    {
+        audioSource.PlayOneShot(clip, volume);
+    }
+    private void PlaySpeechSound()
+    {
+        audioSource.PlayOneShot(speechSounds[string.Format("{0}", PlayerPrefs.GetString("CurrentLang"))], volume + 0.5f);
     }
 }

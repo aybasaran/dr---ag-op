@@ -484,6 +484,7 @@ GameObject:
   - component: {fileID: 728743235}
   - component: {fileID: 728743234}
   - component: {fileID: 728743236}
+  - component: {fileID: 728743237}
   m_Layer: 5
   m_Name: AnimalNameTxt
   m_TagString: Untagged
@@ -567,6 +568,23 @@ MonoBehaviour:
   ENG: Horse
   SPA: Caballo
   TUR: At
+--- !u!114 &728743237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728743232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720f88e130c66384e9a783944ba90095, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpanishSpeech: {fileID: 8300000, guid: a3acade60b7d82d41992fbeddc3b8b7b, type: 3}
+  EnglishSpeech: {fileID: 8300000, guid: 62e9fabfa00e9f04bae7ea5625f2a681, type: 3}
+  TurkishSpeech: {fileID: 8300000, guid: 9a5b03248d4b9994a80d21e80b2621ff, type: 3}
+  audioSource: {fileID: 1427101409}
+  clip: {fileID: 0}
 --- !u!1 &849015866
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,7 +1666,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fb1058f4b5ac66442b316c4d6e1559b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 861abb94c5be37949b7ff995cbc4da20, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1679,7 +1697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 4
-  m_AspectRatio: 1.37
+  m_AspectRatio: 1.77
 --- !u!1 &1810367591
 GameObject:
   m_ObjectHideFlags: 0
@@ -1723,6 +1741,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73d8cca8e636bd4468eb90d69375a56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpanishSpeech: {fileID: 8300000, guid: a3acade60b7d82d41992fbeddc3b8b7b, type: 3}
+  EnglishSpeech: {fileID: 8300000, guid: 62e9fabfa00e9f04bae7ea5625f2a681, type: 3}
+  TurkishSpeech: {fileID: 8300000, guid: 9a5b03248d4b9994a80d21e80b2621ff, type: 3}
   puzzle: {fileID: 1891314066}
   pieces:
   - {fileID: 620047358}
@@ -1730,7 +1751,7 @@ MonoBehaviour:
   - {fileID: 1019818086}
   - {fileID: 1824252407}
   - {fileID: 2047545002}
-  puzzleNameText: {fileID: 728743232}
+  puzzleName: {fileID: 728743232}
   audioSource: {fileID: 1427101409}
   clip: {fileID: 8300000, guid: cd511c1dc4edc7c479d91cb8f2b064c0, type: 3}
   volume: 0.5
@@ -1908,9 +1929,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -970488187
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayerID: -1395908897
+  m_SortingLayer: 6
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 6d4dae4007b913b4cab9763f135e5bdc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1939,7 +1960,7 @@ RectTransform:
   m_GameObject: {fileID: 1891314066}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 0}
+  m_LocalScale: {x: 1.4999999, y: 1.4999999, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1

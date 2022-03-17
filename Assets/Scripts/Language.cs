@@ -8,24 +8,15 @@ public class Language : MonoBehaviour
 
     public void English()
     {
-        PlayerPrefs.SetString("CurrentLang", "ENG");
-        Debug.Log(PlayerPrefs.GetString("CurrentLang"));
+        PlayerPrefs.SetString("CurrentLang", "en-EN");
     }
     public void Turkish()
     {
-        PlayerPrefs.SetString("CurrentLang", "TUR");
-        Debug.Log(PlayerPrefs.GetString("CurrentLang"));
-
+        PlayerPrefs.SetString("CurrentLang", "tr-TR");
     }
     public void Spain()
     {
-        PlayerPrefs.SetString("CurrentLang", "SPA");
-        Debug.Log(PlayerPrefs.GetString("CurrentLang"));
-    }
-    public void Arabic()
-    {
-        PlayerPrefs.SetString("CurrentLang", "ARA");
-        Debug.Log(PlayerPrefs.GetString("CurrentLang"));
+        PlayerPrefs.SetString("CurrentLang", "es-ES");
     }
 
     private void Start()

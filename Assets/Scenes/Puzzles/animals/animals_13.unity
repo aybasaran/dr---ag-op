@@ -736,7 +736,7 @@ MonoBehaviour:
   - {fileID: 47977484}
   - {fileID: 1953759157}
   - {fileID: 2098362015}
-  puzzleNameText: {fileID: 1039841654}
+  puzzleName: {fileID: 1039841654}
   audioSource: {fileID: 937607030}
   clip: {fileID: 8300000, guid: 5e6e43fd1a4d9d24b9e93ee5dfd024f5, type: 3}
   volume: 0.5
@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8773585, g: 0.57827085, b: 0.1779548, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6815,7 +6815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 4
-  m_AspectRatio: 1.37
+  m_AspectRatio: 1.77
 --- !u!114 &1837517633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6836,7 +6836,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fb1058f4b5ac66442b316c4d6e1559b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4c91ff62d6b0b9347ad0dea06374afe6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

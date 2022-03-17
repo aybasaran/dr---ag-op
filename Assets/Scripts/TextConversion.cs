@@ -26,16 +26,14 @@ public class TextConversion : MonoBehaviour
 
         switch (PlayerPrefs.GetString("CurrentLang"))
         {
-            case "ENG":
+            case "en-EN":
                 convertedText.text = ENG;
                 break;
-            case "TUR":
+            case "tr-TR":
                 convertedText.text = TUR;
                 break;
-            case "SPA":
+            case "es-ES":
                 convertedText.text = SPA;
-                break;
-            case "ARA":
                 break;
             default:
                 convertedText.text = TUR;

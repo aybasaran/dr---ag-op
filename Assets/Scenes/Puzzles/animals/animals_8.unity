@@ -1144,7 +1144,7 @@ MonoBehaviour:
   - {fileID: 152329525}
   - {fileID: 120407219}
   - {fileID: 1113666395}
-  puzzleNameText: {fileID: 1857038365}
+  puzzleName: {fileID: 1857038365}
   audioSource: {fileID: 1054915031}
   clip: {fileID: 8300000, guid: 9562818fa8ba2c24588ed8bbedc02789, type: 3}
   volume: 0.5
@@ -1882,7 +1882,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fb1058f4b5ac66442b316c4d6e1559b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4e163e8d15359864bb969d33845f6e6f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

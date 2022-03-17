@@ -56,3 +56,6 @@ TagManager:
   - name: Particles
     uniqueID: 3931149299
     locked: 0
+  - name: Puzzle Image
+    uniqueID: 2899058399
+    locked: 0

@@ -14,15 +14,14 @@ class InitGame : MonoBehaviour
             switch (Application.systemLanguage)
             {
                 case SystemLanguage.Turkish:
-                    PlayerPrefs.SetString("CurrentLang", "TUR");
+                    PlayerPrefs.SetString("CurrentLang", "tr-TR");
                     break;
                 case SystemLanguage.Spanish:
-                    PlayerPrefs.SetString("CurrentLang", "SPA");
+                    PlayerPrefs.SetString("CurrentLang", "es-ES");
                     break;
 
                 default:
-                    PlayerPrefs.SetString("CurrentLang", "ENG");
-                    Debug.Log("Varsayilan dil");
+                    PlayerPrefs.SetString("CurrentLang", "en-EN");
                     break;
             }
             PlayerPrefs.SetString("diffLevel", "normal");

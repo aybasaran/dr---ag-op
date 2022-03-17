@@ -1019,7 +1019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 4
-  m_AspectRatio: 1.37
+  m_AspectRatio: 1.77
 --- !u!114 &631706352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1040,7 +1040,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fb1058f4b5ac66442b316c4d6e1559b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 861abb94c5be37949b7ff995cbc4da20, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6719,13 +6719,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73d8cca8e636bd4468eb90d69375a56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpanishSpeech: {fileID: 8300000, guid: 2be664adc6232ac4894e60189c0b92c7, type: 3}
+  EnglishSpeech: {fileID: 8300000, guid: 18cb620e4f7d7884c834886db8db5ac0, type: 3}
+  TurkishSpeech: {fileID: 8300000, guid: 330d5f0044ca481488dfaed7d7ed7ec1, type: 3}
   puzzle: {fileID: 1008130079}
   pieces:
   - {fileID: 1917366644}
   - {fileID: 5855360}
   - {fileID: 848340253}
   - {fileID: 35728045}
-  puzzleNameText: {fileID: 713264601}
+  puzzleName: {fileID: 713264601}
   audioSource: {fileID: 1909615396}
   clip: {fileID: 8300000, guid: 411212c1c98f8c14888d3d08d85fae51, type: 3}
   volume: 0.5
