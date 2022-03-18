@@ -13,8 +13,6 @@ public class PuzzleNameClicked : MonoBehaviour, IPointerClickHandler
 
     public IDictionary<string, AudioClip> speechSounds;
     public AudioSource audioSource;
-    public AudioClip clip;
-
     void Awake()
     {
         speechSounds = new Dictionary<string, AudioClip>(){
