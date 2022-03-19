@@ -318,7 +318,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155814905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.79, y: 4.33, z: 44.8686}
+  m_LocalPosition: {x: -5.19, y: 4.03, z: 44.8686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -437,7 +437,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239489153}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.3, y: 3.13, z: 44.8686}
+  m_LocalPosition: {x: 5.81, y: 3.13, z: 44.8686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -556,7 +556,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 252170006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.88, y: -1.55, z: 44.8686}
+  m_LocalPosition: {x: 6.16, y: -1.02, z: 44.8686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -695,6 +695,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73d8cca8e636bd4468eb90d69375a56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpanishSpeech: {fileID: 8300000, guid: 5ef1dd9fde1eae1499c67664448459be, type: 3}
+  EnglishSpeech: {fileID: 8300000, guid: 33e2a8a61bae76d4fa05bfaaa9c2909c, type: 3}
+  TurkishSpeech: {fileID: 8300000, guid: 4954c9150c6cc5d46b0473563ff6c58b, type: 3}
   puzzle: {fileID: 1313628603}
   pieces:
   - {fileID: 402744134}
@@ -705,7 +708,6 @@ MonoBehaviour:
   puzzleName: {fileID: 1827974828}
   audioSource: {fileID: 2014867271}
   clip: {fileID: 0}
-  volume: 0.5
 --- !u!4 &398252683
 Transform:
   m_ObjectHideFlags: 0
@@ -833,7 +835,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402744134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.22, y: -0.09, z: 44.8686}
+  m_LocalPosition: {x: -7.18, y: -0.09, z: 44.8686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1065,7 +1067,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562977966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.63, y: -4.04, z: 44.8686}
+  m_LocalPosition: {x: -4.26, y: -4.04, z: 44.8686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6462,6 +6464,7 @@ GameObject:
   - component: {fileID: 1313628606}
   - component: {fileID: 1313628605}
   - component: {fileID: 1313628604}
+  - component: {fileID: 1313628607}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -6476,7 +6479,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313628603}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -6506,8 +6509,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -970488187
-  m_SortingLayer: 3
+  m_SortingLayerID: -1395908897
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1123d03b011a0ee4bb489d267acbdaf6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6547,6 +6550,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!65 &1313628607
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313628603}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.843743, y: 5.620019, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1368168779
 GameObject:
   m_ObjectHideFlags: 0
@@ -6780,6 +6796,7 @@ GameObject:
   - component: {fileID: 1827974831}
   - component: {fileID: 1827974830}
   - component: {fileID: 1827974829}
+  - component: {fileID: 1827974833}
   m_Layer: 5
   m_Name: AnimalNameTxt
   m_TagString: Untagged
@@ -6863,6 +6880,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -25}
   m_SizeDelta: {x: 200, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1827974833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827974828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720f88e130c66384e9a783944ba90095, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpanishSpeech: {fileID: 8300000, guid: 5ef1dd9fde1eae1499c67664448459be, type: 3}
+  EnglishSpeech: {fileID: 8300000, guid: 33e2a8a61bae76d4fa05bfaaa9c2909c, type: 3}
+  TurkishSpeech: {fileID: 8300000, guid: 4954c9150c6cc5d46b0473563ff6c58b, type: 3}
+  audioSource: {fileID: 2014867271}
 --- !u!1 &1935360986
 GameObject:
   m_ObjectHideFlags: 0

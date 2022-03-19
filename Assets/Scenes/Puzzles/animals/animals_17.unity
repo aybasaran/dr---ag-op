@@ -368,7 +368,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 231850672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.89, y: -1.69, z: 44.8686}
+  m_LocalPosition: {x: -4.83, y: -1.69, z: 44.8686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5811,7 +5811,6 @@ MonoBehaviour:
   puzzleName: {fileID: 2131509754}
   audioSource: {fileID: 1959687033}
   clip: {fileID: 8300000, guid: 7fa09b548a7ae194c9c919346b544422, type: 3}
-  volume: 0.5
 --- !u!4 &852769162
 Transform:
   m_ObjectHideFlags: 0
@@ -6029,7 +6028,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096974435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.73, y: -1.09, z: 44.8686}
+  m_LocalPosition: {x: 5.15, y: -1.09, z: 44.8686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6244,7 +6243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302929352}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.53, y: 2.68, z: 44.8686}
+  m_LocalPosition: {x: -4.55, y: 1.55, z: 44.8686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6963,7 +6962,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122268637}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.01, y: 1.73, z: 44.8686}
+  m_LocalPosition: {x: 3.62, y: 1.73, z: 44.8686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

@@ -684,7 +684,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &630332267
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -876,7 +876,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 716403314}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.59, y: -4.17, z: 44.8686}
+  m_LocalPosition: {x: -4.7, y: -3.98, z: 44.8686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -995,7 +995,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862803816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.34, y: 2.74, z: 44.8686}
+  m_LocalPosition: {x: 4.69, y: 0.26, z: 44.8686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1030,6 +1030,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73d8cca8e636bd4468eb90d69375a56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpanishSpeech: {fileID: 8300000, guid: 72358446a4441df49a843bb6ba38626d, type: 3}
+  EnglishSpeech: {fileID: 8300000, guid: 2d165b25deaaed84abf9e8a7b9866540, type: 3}
+  TurkishSpeech: {fileID: 8300000, guid: 75ae04af669d3504190acfb8f893b4d2, type: 3}
   puzzle: {fileID: 630332266}
   pieces:
   - {fileID: 716403314}
@@ -1095,6 +1098,7 @@ GameObject:
   - component: {fileID: 1149957952}
   - component: {fileID: 1149957951}
   - component: {fileID: 1149957950}
+  - component: {fileID: 1149957954}
   m_Layer: 5
   m_Name: AnimalNameTxt
   m_TagString: Untagged
@@ -1178,6 +1182,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -25}
   m_SizeDelta: {x: 200, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1149957954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149957949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720f88e130c66384e9a783944ba90095, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpanishSpeech: {fileID: 8300000, guid: 72358446a4441df49a843bb6ba38626d, type: 3}
+  EnglishSpeech: {fileID: 8300000, guid: 2d165b25deaaed84abf9e8a7b9866540, type: 3}
+  TurkishSpeech: {fileID: 8300000, guid: 75ae04af669d3504190acfb8f893b4d2, type: 3}
+  audioSource: {fileID: 212363539}
 --- !u!1 &1266892998
 GameObject:
   m_ObjectHideFlags: 0
@@ -6824,7 +6844,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113767876}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.04, y: 3.87, z: 44.8686}
+  m_LocalPosition: {x: -3.59, y: 3.04, z: 44.8686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

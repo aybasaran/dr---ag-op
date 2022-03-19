@@ -22,14 +22,13 @@ public class IsComplete : MonoBehaviour
     // public Vector3[] positions;
 
     public GameObject puzzleName;
-    private string puzzleTxt;
+    private string puzzleTxt; 
 
     private int counter = 0;
     private bool isComplete = false;
 
     public AudioSource audioSource;
     public AudioClip clip;
-    public float volume = 0.5f;
 
     private void Awake()
     {
@@ -42,7 +41,7 @@ public class IsComplete : MonoBehaviour
 
         puzzleTxt = puzzleName.GetComponent<Text>().text;
         puzzleName.SetActive(false);
-        puzzle.GetComponent<SpriteRenderer>().enabled = false;
+        puzzle.SetActive(false); 
     }
 
     private void Update()
@@ -52,7 +51,7 @@ public class IsComplete : MonoBehaviour
             if (CheckPositions(this.pieces))
             {
                 puzzleName.SetActive(true);
-                puzzle.GetComponent<SpriteRenderer>().enabled = true;
+                puzzle.SetActive(true); 
                 PlayAnimalSound();
 
                 Invoke("PlaySpeechSound", 1.5f);
@@ -78,10 +77,10 @@ public class IsComplete : MonoBehaviour
 
     private void PlayAnimalSound()
     {
-        audioSource.PlayOneShot(clip, volume);
+        audioSource.PlayOneShot(clip, 1f);
     }
     private void PlaySpeechSound()
     {
-        audioSource.PlayOneShot(speechSounds[string.Format("{0}", PlayerPrefs.GetString("CurrentLang"))], volume + 0.5f);
+        audioSource.PlayOneShot(speechSounds[string.Format("{0}", PlayerPrefs.GetString("CurrentLang"))], 1f);
     }
 }

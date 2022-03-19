@@ -195,6 +195,7 @@ GameObject:
   - component: {fileID: 268028213}
   - component: {fileID: 268028212}
   - component: {fileID: 268028211}
+  - component: {fileID: 268028215}
   m_Layer: 5
   m_Name: AnimalNameTxt
   m_TagString: Untagged
@@ -278,6 +279,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -25}
   m_SizeDelta: {x: 200, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &268028215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268028210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720f88e130c66384e9a783944ba90095, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpanishSpeech: {fileID: 8300000, guid: 1f7f846150103fb4f8b753c04c87540e, type: 3}
+  EnglishSpeech: {fileID: 8300000, guid: 3d51105922695d345bd938ee90775c5d, type: 3}
+  TurkishSpeech: {fileID: 8300000, guid: 9934ca80d8be61d4e90de31ffa651f6f, type: 3}
+  audioSource: {fileID: 946861759}
 --- !u!1 &271854112
 GameObject:
   m_ObjectHideFlags: 0
@@ -5181,13 +5198,14 @@ GameObject:
   - component: {fileID: 316620171}
   - component: {fileID: 316620170}
   - component: {fileID: 316620169}
+  - component: {fileID: 316620172}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &316620169
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5225,10 +5243,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -970488187
-  m_SortingLayer: 3
+  m_SortingLayerID: -1395908897
+  m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6fad76b7da5a2dd4bafaf3de3ce73264, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c556d4d4416bc9b44b0264704cf4d58e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5266,6 +5284,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0.01}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!65 &316620172
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316620168}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.12, y: 5.12, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &357070562
 GameObject:
   m_ObjectHideFlags: 0
@@ -5577,7 +5608,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 400651051}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.73, y: -1.09, z: 44.8686}
+  m_LocalPosition: {x: 4.27, y: -1.09, z: 44.8686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6266,7 +6297,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316500518}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.53, y: 2.68, z: 44.8686}
+  m_LocalPosition: {x: -4.28, y: 2.25, z: 44.8686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6385,7 +6416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430253993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.01, y: 1.73, z: 44.8686}
+  m_LocalPosition: {x: 4.4, y: 1.73, z: 44.8686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6420,6 +6451,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73d8cca8e636bd4468eb90d69375a56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpanishSpeech: {fileID: 0}
+  EnglishSpeech: {fileID: 0}
+  TurkishSpeech: {fileID: 0}
   puzzle: {fileID: 316620168}
   pieces:
   - {fileID: 1430253993}
@@ -6429,7 +6463,6 @@ MonoBehaviour:
   puzzleName: {fileID: 268028210}
   audioSource: {fileID: 946861759}
   clip: {fileID: 8300000, guid: 5e6e43fd1a4d9d24b9e93ee5dfd024f5, type: 3}
-  volume: 0.5
 --- !u!4 &1483763013
 Transform:
   m_ObjectHideFlags: 0
@@ -6943,7 +6976,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1932417267}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.89, y: -1.69, z: 44.8686}
+  m_LocalPosition: {x: -4.81, y: -1.69, z: 44.8686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
