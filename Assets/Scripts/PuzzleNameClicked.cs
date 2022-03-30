@@ -23,7 +23,10 @@ public class PuzzleNameClicked : MonoBehaviour, IPointerClickHandler
     }
     public void OnPointerClick(PointerEventData eventData)
     {
-        audioSource.PlayOneShot(speechSounds[string.Format("{0}", PlayerPrefs.GetString("CurrentLang"))], 1f);
+        if (!audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(speechSounds[string.Format("{0}", PlayerPrefs.GetString("CurrentLang"))], 2f);
+        }
     }
 
 

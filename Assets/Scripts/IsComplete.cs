@@ -22,7 +22,7 @@ public class IsComplete : MonoBehaviour
     // public Vector3[] positions;
 
     public GameObject puzzleName;
-    private string puzzleTxt; 
+    private string puzzleTxt;
 
     private int counter = 0;
     private bool isComplete = false;
@@ -41,7 +41,7 @@ public class IsComplete : MonoBehaviour
 
         puzzleTxt = puzzleName.GetComponent<Text>().text;
         puzzleName.SetActive(false);
-        puzzle.SetActive(false); 
+        puzzle.SetActive(false);
     }
 
     private void Update()
@@ -51,10 +51,10 @@ public class IsComplete : MonoBehaviour
             if (CheckPositions(this.pieces))
             {
                 puzzleName.SetActive(true);
-                puzzle.SetActive(true); 
+                puzzle.SetActive(true);
                 PlayAnimalSound();
 
-                Invoke("PlaySpeechSound", 1.5f);
+                Invoke("PlaySpeechSound", clip.length);
             }
         }
     }
@@ -81,6 +81,6 @@ public class IsComplete : MonoBehaviour
     }
     private void PlaySpeechSound()
     {
-        audioSource.PlayOneShot(speechSounds[string.Format("{0}", PlayerPrefs.GetString("CurrentLang"))], 1f);
+        audioSource.PlayOneShot(speechSounds[string.Format("{0}", PlayerPrefs.GetString("CurrentLang"))], 2f);
     }
 }

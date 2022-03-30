@@ -10,7 +10,10 @@ public class PuzzleImageClicked : MonoBehaviour
     public AudioClip audioClip;
     private void OnMouseDown()
     {
-        audioSource.PlayOneShot(audioClip, 0.75f);
+        if (!audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(audioClip, 0.75f);
+        }
     }
 
 }
